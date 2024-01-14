@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Dáta z MS Azure
     const clientId = '974175d5-32b4-4a19-a6dc-286d8baf7df2';
     const clientSecret = 'mKC8Q~g2P9an9h8ogNgDBSeE-QpLsDfF1hF8Zcl5';
-    const redirectUri = 'http://localhost:5500/';
+    const redirectUri = 'https://magr04.github.io/semestralna-praca-aplikace1//';
 
     // OAuth2
     const authEndpoint = 'https://login.microsoftonline.com/common/oauth2/v2.0/token';
