@@ -1,0 +1,87 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+body {
+    background-color: #1b6bbb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#events-list {
+    list-style-type: none;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  /* Stylizace pro každou událost v seznamu */
+  #events-list li {
+    background-color: #f9f9f9; /* Pozadí pro lepší čitelnost */
+    padding: 15px; /* Vnitřní odsazení pro lepší vzhled */
+    margin-bottom: 15px; /* Mezera mezi jednotlivými událostmi */
+    border-radius: 8px; /* Zaoblené rohy pro lepší vzhled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stín pro efekt 3D vzhledu */
+    transition: all 0.3s ease; /* Plynulý přechod pro interaktivitu */
+  }
+  
+  /* Efekt při najetí myší na událost */
+  #events-list li:hover {
+    transform: translateY(-5px); /* Posunutí o 5px nahoru pro efekt zvednutí */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Větší stín pro efekt zvednutí */
+  }
+  
+  /* Zarovnání textu a prvků uvnitř každého <li> prvku */
+  #events-list li strong {
+    display: block; /* Blokové zobrazení pro lepší zarovnání */
+    margin-bottom: 10px; /* Mezera pod nadpisem */
+    font-size: 18px; /* Velikost písma pro nadpis */
+    color: #333; /* Barva textu pro lepší čitelnost */
+  }
+  
+  #events-list li textarea.event-notes {
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    margin-top: 16px;
+  }
+  #events-list li select.event-category {
+    width: 100%; /* Plná šířka pro formulářové prvky */
+    padding: 10px; /* Vnitřní odsazení pro lepší vzhled */
+    margin-top: 10px; /* Mezera nad formulářovými prvky */
+    border: 1px solid #ccc; /* Ohraničení pro lepší vzhled a čitelnost */
+    border-radius: 4px; /* Zaoblené rohy pro lepší vzhled */
+    font-size: 16px; /* Velikost písma pro formulářové prvky */
+    margin-bottom: 16px; 
+    
+  }
+  
+  .save-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+    
