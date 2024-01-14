@@ -1,0 +1,1 @@
+# semestralna-praca-aplikace1
