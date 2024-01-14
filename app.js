@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Dáta MS Azure
     const clientId = '974175d5-32b4-4a19-a6dc-286d8baf7df2';
     const clientSecret = 'mKC8Q~g2P9an9h8ogNgDBSeE-QpLsDfF1hF8Zcl5';
-    const redirectUri = 'https://magr04.github.io/semestralna-praca-aplikace1/';
+    const redirectUri = 'http://localhost:5500/';
 
     // OAuth2
     const authEndpoint = 'https://login.microsoftonline.com/common/oauth2/v2.0/token';
@@ -25,15 +25,15 @@ $(document).ready(function() {
         success: function(response) {
             const accessToken = response.access_token;
 
-            // Fetch Calendar Events
+            // Fetch udalosti
             fetchCalendarEvents(accessToken);
         },
         error: function(error) {
-            console.error('Error authenticating:', error);
+            console.error('Chyba pri autentifikácii:', error);
         }
     });
 
-    // Fetch udalostí
+    // Fetch udalosti
     function fetchCalendarEvents(accessToken) {
         const apiUrl = 'https://graph.microsoft.com/v1.0/me/events';
 
@@ -72,7 +72,7 @@ $(document).ready(function() {
                 
             },
             error: function(error) {
-                console.error('Error fetching events:', error);
+                console.error('Chyba pri načítaní', error);
             }
         });
 
@@ -104,7 +104,7 @@ $(document).ready(function() {
     const eventsList = $('#events-list');
 
     testEvents.forEach(function(event) {
-        const startDate = new Date(event.start.dateTime); // Přidáme datum a čas začátku události
+        const startDate = new Date(event.start.dateTime);
         const listItem = $('<li></li>');
         listItem.html(`
             <strong>${event.subject}</strong> 
