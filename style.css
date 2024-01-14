@@ -23,28 +23,25 @@ img {
     margin-right: auto;
 }
   
-  /* Stylizace pro každou událost v seznamu */
   #events-list li {
-    background-color: #f9f9f9; /* Pozadí pro lepší čitelnost */
-    padding: 15px; /* Vnitřní odsazení pro lepší vzhled */
-    margin-bottom: 15px; /* Mezera mezi jednotlivými událostmi */
-    border-radius: 8px; /* Zaoblené rohy pro lepší vzhled */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stín pro efekt 3D vzhledu */
-    transition: all 0.3s ease; /* Plynulý přechod pro interaktivitu */
+    background-color: #f9f9f9; 
+    padding: 16px; 
+    margin-bottom: 16px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
   }
   
-  /* Efekt při najetí myší na událost */
   #events-list li:hover {
-    transform: translateY(-5px); /* Posunutí o 5px nahoru pro efekt zvednutí */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Větší stín pro efekt zvednutí */
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
-  
-  /* Zarovnání textu a prvků uvnitř každého <li> prvku */
+
   #events-list li strong {
-    display: block; /* Blokové zobrazení pro lepší zarovnání */
-    margin-bottom: 10px; /* Mezera pod nadpisem */
-    font-size: 18px; /* Velikost písma pro nadpis */
-    color: #333; /* Barva textu pro lepší čitelnost */
+    display: block; 
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333; 
   }
   
   #events-list li textarea.event-notes {
@@ -54,18 +51,18 @@ img {
     margin-top: 16px;
   }
   #events-list li select.event-category {
-    width: 100%; /* Plná šířka pro formulářové prvky */
-    padding: 10px; /* Vnitřní odsazení pro lepší vzhled */
-    margin-top: 10px; /* Mezera nad formulářovými prvky */
-    border: 1px solid #ccc; /* Ohraničení pro lepší vzhled a čitelnost */
-    border-radius: 4px; /* Zaoblené rohy pro lepší vzhled */
-    font-size: 16px; /* Velikost písma pro formulářové prvky */
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
     margin-bottom: 16px; 
     
   }
   
   .save-btn {
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -76,11 +73,13 @@ img {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 16px;
   }
   
   .save-btn:hover {
     background-color: #0056b3;
   }
+
   
 
 

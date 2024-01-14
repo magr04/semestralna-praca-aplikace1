@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    // Dáta z MS Azure
+    // Dáta MS Azure
     const clientId = '974175d5-32b4-4a19-a6dc-286d8baf7df2';
     const clientSecret = 'mKC8Q~g2P9an9h8ogNgDBSeE-QpLsDfF1hF8Zcl5';
-    const redirectUri = 'https://magr04.github.io/semestralna-praca-aplikace1//';
+    const redirectUri = 'http://localhost:5500/';
 
     // OAuth2
     const authEndpoint = 'https://login.microsoftonline.com/common/oauth2/v2.0/token';
@@ -61,6 +61,9 @@ $(document).ready(function() {
                         <option value="Planovanie">Plánovanie</option>
                         <option value="Diskusia">Diskusia</option>
                         </select>
+                        <label>
+                            <input type="checkbox" class="event-completed" /> Hotové
+                        </label>
                     `);
                     eventsList.append(listItem);
                     addSaveButtonToListItem(listItem);
@@ -81,7 +84,9 @@ $(document).ready(function() {
         saveButton.click(function() {
             const notes = listItem.find('.event-notes').val();
             const category = listItem.find('.event-category').val();
+            const completed = listItem.find('.event-completed').is(':checked');
             console.log('Uložené: Poznámka:', notes, 'Kategória:', category);
+            alert('Uložené: Poznámka: ' + notes + ' Kategória: ' + category  + ' Hotové: ' + completed + ' ');
         });
 
         listItem.append(saveButton);
@@ -111,7 +116,9 @@ $(document).ready(function() {
                 <option value="Planovanie">Plánovanie</option>
                 <option value="Diskusia">Diskusia</option>
             </select>
-
+            <label>
+                <input type="checkbox" class="event-completed" /> Hotové
+            </label>
         `);
 
         eventsList.append(listItem);
